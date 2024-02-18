@@ -14,10 +14,10 @@ import torch
 from easydict import EasyDict as edict
 
 from config import get_config_regression, get_config_tune
-from .data_loader import MMDataLoader
-from .models import AMIO
-from .trains import ATIO
-from .utils import assign_gpu, count_parameters, setup_seed
+from data_loader import MMDataLoader
+from models import AMIO
+from trains import ATIO
+from utils import assign_gpu, count_parameters, setup_seed
 
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
 os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":4096:2" # This is crucial for reproducibility
