@@ -1,1 +1,1 @@
-from .TFR_NET import TFR_NET
+from TFR_NET import TFR_NET
